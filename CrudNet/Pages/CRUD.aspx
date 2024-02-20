@@ -24,12 +24,13 @@
         </div>
          <div class ="mb-3">
             <label class="form-label">Fecha Nacimiento</label>
-            <asp:TextBox runat="server" TextMode="date" CssClass="form-control" ID="tbdate"></asp:TextBox>
+            <asp:TextBox runat="server" TextMode="Date" CssClass="form-control" ID="tbdate"></asp:TextBox>
         </div>
-        <asp:Button runat="server" CssClass="btn btn-primary" ID="btncreate" Text="Create" Visible="false"/>
-        <asp:Button runat="server" CssClass="btn btn-primary" ID="btnupdate" Text="Update" Visible="false"/>
-        <asp:Button runat="server" CssClass="btn btn-primary" ID="btndelete" Text="Delete" Visible="false"/>
-        <asp:Button runat="server" CssClass="btn btn-primary btn-dark" ID="btnvolver" Text="Volver" Visible="false"/>
+            
+        <asp:Button runat="server" CssClass="btn btn-primary" ID="btncreate" Text="Create" Visible="false" OnClick="btncreate_Click"/>
+        <asp:Button runat="server" CssClass="btn btn-primary" ID="btnupdate" Text="Update" Visible="false" OnClick="btnupdate_Click"/>
+        <asp:Button runat="server" CssClass="btn btn-primary" ID="btndelete" Text="Delete" Visible="false" OnClick="btndelete_Click"/>
+        <asp:Button runat="server" CssClass="btn btn-primary btn-dark" ID="btnvolver" Text="Volver" Visible="false" OnClick="btnvolver_Click"/>
         </div>
     </form> 
 </asp:Content>
